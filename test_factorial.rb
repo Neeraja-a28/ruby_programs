@@ -1,6 +1,6 @@
 class TestFactorial
 
-	def factorial(number)
+def factorial(number)
   		factorial=1
 		if (number==0)
 			puts "Error! Could not find the factorial of one"
@@ -12,7 +12,7 @@ class TestFactorial
 			end
 		end
 		puts "factorial of #{number} is #{factorial}"
-	end
+end
 
 end
 
