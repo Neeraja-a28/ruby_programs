@@ -18,7 +18,6 @@ class FindDuplicateValues
 		duplicates
 	end
 	
-	
 end
 
 array = [3,9,3,7,4,8,2,9,4,8]

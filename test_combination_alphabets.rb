@@ -28,6 +28,7 @@ class TestCombinationAlphabets
    t.generating_combinations(2)
 end
 
+
 # Write a program which takes in an integer input(assume it is >=2) and does the following, 
 
 # if the input is 1, it prints 'a', 'b', ..... 'z'

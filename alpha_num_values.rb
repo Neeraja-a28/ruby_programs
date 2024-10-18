@@ -20,3 +20,4 @@ alpha_values, num_values = a.find_alpha_num_values(array)
 
 puts "Alpha Values: #{alpha_values}"
 puts "Number Values: #{num_values}"
+
