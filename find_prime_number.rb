@@ -3,10 +3,10 @@ class FindPrimeNumber
 	def is_prime(num)
   		return false if (num < 2)
 
- 		(2..(num - 1)).each do |n|
-   		 return false if num % n == 0
+ 		(2...num).each do |n|
+   		 return true if num % n == 0
   	   end
-       true
+       false
     end
 end
 num = 50

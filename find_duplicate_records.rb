@@ -1,7 +1,7 @@
 class FindDuplicaterecords
 
 	def duplicate_record(array)
-		array.group_by(&:itself).transform_values(&:size)
+		array.group_by(&:itself).transform_values(&:size).select{|k,v| v > 1}.map(&:first).sum
 	end
 end
 
