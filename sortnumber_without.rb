@@ -1,13 +1,18 @@
 class SortnumberWithout
-  a = [7,9,2,3,0,1,8,6,5]
-  puts "#{a}"
 
-  0.upto(a.size-1) do |i|
-	(i+1).upto(a.size-1) do |j|
-	  if a[i] > a[j]
-       a[i],a[j] = a[j],a[i]
-	  end
-	end
+  def sort_values(input)
+    0.upto(input.size-1) do |i|
+	   (i+1).upto(input.size-1) do |j|
+	     if input[i] > input[j]
+          input[i],input[j] = input[j],input[i]
+	     end
+	   end
+    end
+    puts "#{a}"
   end
-  puts "#{a}"
 end
+
+input = [7,9,2,3,0,1,8,6,5]
+
+s = SortnumberWithout.new
+s.sort_values(input)
