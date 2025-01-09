@@ -1,6 +1,6 @@
 class FindKeyValueLength
 	def test_key_value_length(input)
-		input.keys.map(&:to_s).sort_by(&:length)  # o/p: [abc, 4567, another_key]
+		input.keys.map(&:to_s).sort_by(&:length)  
 	end
 
 	def find_another_key_length(input)
@@ -29,6 +29,6 @@ end
 input = { abc: 'hello', 'another_key' => 123, 4567 => 'third' }
 
 t = FindKeyValueLength.new
-# puts t.test_key_value_length(input)
-puts t.find_another_key_length(input)
+# puts t.test_key_value_length(input) # o/p: [abc, 4567, another_key]
+puts t.find_another_key_length(input) # o/p: {:abc=>"hello", 4567=>"third", "another_key"=>123}
 

@@ -1,14 +1,18 @@
 class ReverseString
  
- a = "abcdef"
-  puts a.reverse
+ def find_reverse_str(input)
+    reverse_str = ""
+    length = input.length
 
-  puts a.chars.reduce{|x,y| y+x}
+    (length-1).downto(0) do |i|
+        reverse_str += input[i]
+    end
 
-  b = a.length - 1
-   while b >= 0
-    puts a[b]
-    b = b-1    
-   end
+    reverse_str
+ end
 
 end
+
+input = "hello new ruby"
+r = ReverseString.new
+puts r.find_reverse_str(input)  # o/p: ybur wen olleh
